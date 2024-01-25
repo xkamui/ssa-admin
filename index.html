@@ -5,10 +5,136 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/app.css">
 </head>
 
 <body>
-    Index page
+    
+    <section id="header">header</section>
+    <section id="mainContent">
+        <aside id="menu">
+            <div class="wrapperContent">
+                <ul class="menu">
+                    <li class="menuItem">
+                        <button><span class="icon">🧡</span> Menu 01</button>
+                        <ul class="submenu">
+                            <li class="submenuItem"><button><span class="icon">🔞</span> Sub Menu 101</button></li>
+                            <li class="submenuItem"><button><span class="icon">🔞</span> Sub Menu 102</button></li>
+                            <li class="submenuItem"><button><span class="icon">🔞</span> Sub Menu 103</button></li>
+                            <li class="submenuItem"><button><span class="icon">🔞</span> Sub Menu 104</button></li>
+                            <li class="submenuItem"><button><span class="icon">🔞</span> Sub Menu 105</button></li>
+                        </ul>
+                    </li>
+                    <li class="menuItem">
+                        <button><span class="icon">💛</span> Menu 02</button>
+                        <ul class="submenu">
+                            <li class="submenuItem"><button><span class="icon">🚳</span> Sub Menu 201</button></li>
+                            <li class="submenuItem"><button><span class="icon">🚳</span> Sub Menu 202</button></li>
+                            <li class="submenuItem"><button><span class="icon">🚳</span> Sub Menu 203</button></li>
+                            <li class="submenuItem"><button><span class="icon">🚳</span> Sub Menu 204</button></li>
+                            <li class="submenuItem"><button><span class="icon">🚳</span> Sub Menu 205</button></li>
+                        </ul>
+                    </li>
+                    <li class="menuItem">
+                        <button><span class="icon">💚</span> Menu 03</button>
+                        <ul class="submenu">
+                            <li class="submenuItem"><button><span class="icon">🔇</span> Sub Menu 301</button></li>
+                            <li class="submenuItem"><button><span class="icon">🔇</span> Sub Menu 302</button></li>
+                            <li class="submenuItem"><button><span class="icon">🔇</span> Sub Menu 303</button></li>
+                            <li class="submenuItem"><button><span class="icon">🔇</span> Sub Menu 304</button></li>
+                            <li class="submenuItem"><button><span class="icon">🔇</span> Sub Menu 305</button></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+        <main id="content">
+            <div class="wrapperContent">
+
+                <div class="content">
+
+                    <h1>UI Elements</h1>
+
+                    <div class="boxContent">
+                        <h2>Buttons</h2>
+
+                        <div class="card">
+                            <h3>Default buttons</h3>
+                            <p>Bootstrap includes six predefined button styles, each serving its own semantic purpose.</p>
+
+                            <button class="btn btn-primary" type="button">Primary</button>
+                            <button class="btn btn-secondary" type="button">Secondary</button>
+                            <button class="btn btn-success" type="button">Success</button>
+                            <button class="btn btn-info" type="button">Info</button>
+                            <button class="btn btn-warning" type="button">Warning</button>
+                            <button class="btn btn-danger" type="button">Danger</button>
+                            <button class="btn btn-dark" type="button">Dark</button>
+                            <button class="btn btn-link" type="button">Link</button>
+                            <button class="btn btn-light" type="button">Light</button>
+                        </div>
+                        
+
+                        
+                        <div class="card">
+                            <h3>Outline buttons</h3>
+                            <p>Replace the default modifier classes with the outline-* ones to remove all background images and colors on any button.</p>
+                            
+                            <button class="btn btn-outline-primary" type="button">Primary</button>
+                            <button class="btn btn-outline-secondary" type="button">Secondary</button>
+                            <button class="btn btn-outline-success" type="button">Success</button>
+                            <button class="btn btn-outline-info" type="button">Info</button>
+                            <button class="btn btn-outline-warning" type="button">Warning</button>
+                            <button class="btn btn-outline-danger" type="button">Danger</button>
+                            <button class="btn btn-outline-dark" type="button">Dark</button>
+                            <button class="btn btn-outline-link" type="button">Link</button>
+                            <button class="btn btn-outline-light" type="button">Light</button>
+                        </div>
+                        
+                        <div class="card">
+                            <h3>Rounded buttons</h3>
+                            <p>Use pill for button round border.</p>
+
+                            <button class="btn btn-primary rounded-pill" type="button">Primary</button>
+                            <button class="btn btn-secondary rounded-pill" type="button">Secondary</button>
+                            <button class="btn btn-success rounded-pill" type="button">Success</button>
+                            <button class="btn btn-info rounded-pill" type="button">Info</button>
+                            <button class="btn btn-warning rounded-pill" type="button">Warning</button>
+                            <button class="btn btn-danger rounded-pill" type="button">Danger</button>
+                            <button class="btn btn-dark rounded-pill" type="button">Dark</button>
+                            <button class="btn btn-link rounded-pill" type="button">Link</button>
+                            <button class="btn btn-light rounded-pill" type="button">Light</button>
+                        </div>
+                        
+                        <div class="card">
+                            <h3>Buttons with icon</h3>
+                            <p>Add icon in button.</p>
+
+                            <button class="btn btn-primary" type="button"><i class="bx bx-check-double font-size-16 align-middle me-2"></i> Primary</button>
+                            <button class="btn btn-success" type="button"><i class="bx bx-check-double font-size-16 align-middle me-2"></i> Success</button>
+                            <button class="btn btn-warning" type="button"><i class="bx bx-check-double font-size-16 align-middle me-2"></i> Warning</button>
+                            <button class="btn btn-danger" type="button"><i class="bx bx-check-double font-size-16 align-middle me-2"></i> Danger</button>
+                            <button class="btn btn-dark" type="button"><i class="bx bx-check-double font-size-16 align-middle me-2"></i> Loading</button>
+                            <button class="btn btn-light" type="button"><i class="bx bx-check-double font-size-16 align-middle me-2"></i> loading</button>
+                        </div>
+                            
+                        
+
+                    </div>
+
+                </div>
+
+            </div>
+        </main>
+    </section>
+
 </body>
 
 </html>
